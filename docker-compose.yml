@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  tahacahalaha:
+    build:
+      context: .
+    image: tahacahalaha
+    tty: true
+    volumes:
+      - .:/usr/local/app/tahacahalaha
