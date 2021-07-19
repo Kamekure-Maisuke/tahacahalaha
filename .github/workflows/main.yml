@@ -1,0 +1,17 @@
+name: "test"
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: test
+      run: |
+        echo "test value"
+        echo ${{ secrets.TEST }}
+    - name: hello
+      run: |
+        echo "Hello"
+        echo ${{ secrets.TEST }}
